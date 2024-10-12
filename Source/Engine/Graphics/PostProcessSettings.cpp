@@ -17,6 +17,7 @@ void AmbientOcclusionSettings::BlendWith(AmbientOcclusionSettings& other, float 
     const bool isHalf = weight >= 0.5f;
 
     BLEND_BOOL(Enabled);
+    BLEND_ENUM(Method);
     BLEND_FLOAT(Intensity);
     BLEND_FLOAT(Power);
     BLEND_FLOAT(Radius);
